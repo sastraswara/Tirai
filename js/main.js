@@ -27,6 +27,40 @@ const { $_ready, $_ } = Monogatari;
 
 // 1. Outside the $_ready function:
 
+// Action: Play Marimba
+class PlayMarimba extends Monogatari.Action {
+	static matchString([action]) {
+		return action === "playMarimba";
+	}
+
+	constructor(){
+		super();
+	}
+
+	apply() {
+		const soundArr = [
+			"m01",
+			"m02",
+			"m03",
+			"m04",
+			"m05",
+			"m06",
+			"m07",
+			"m08",
+			"m09",
+			"m10",
+			"m11",
+			"m12"
+		]
+		// Play random one shot
+		const idx = Math.floor(Math.random() * soundArr.length);
+		const oneshot = soundArr[idx];
+		monogatari.run("play music " + oneshot);
+	}
+}
+PlayMarimba.id = "PlayMarimba";
+monogatari.registerAction(PlayMarimba);
+
 
 $_ready (() => {
 	// 2. Inside the $_ready function:
