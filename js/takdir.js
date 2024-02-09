@@ -14,6 +14,34 @@ monogatari.assets("music", {
     "m12": "sta_marimba_12.mp3",
 });
 
+// Choice Text
+const staChoice = {
+    "Congress": "(Sometimes, I still remember that one day during the Language Congress several years ago.)",
+    "NewPosition": "(The war brings many changes.)",
+    "Mirna": "(Meanwhile, memory of my late wife arose.)",
+    "ToTheSuburb": "(I don't feel safe living in the city)",
+    "ViolentTeacher": "(Often I feel impatient with how things are...)",
+    "Sugianti": "(Now, I wonder what S. is doing?)",
+    "Study": "(But I think I should continue with my study?)",
+    "LanguageCommision": "(Ah, the young language of our...)",
+    "YouthMovement": "(At the moment, the youth are making their move)",
+    "TheFilthyPoet": "(...why this young filthy poet comes to mind?)",
+    "WorkPlan": "(The youth movement asked me for something)",
+    "TheCapture": "(My fear is coming true)",
+    "BehindBars": "(...when the body is captured, the mind should stay free...)",
+    "WorkInPrison": "(There are works to be done)",
+    "Interogation": "(Is this the end?)",
+    "Police": "(...what kind of person is he?)",
+    "LearningInPrison": "(A dialogue with oneself, a friend for eternity)",
+    "Observation": "(...the young filthy poet---again)",
+    "BuyingBooks": "(Short trip to the book seller?)",
+    "SayingGoodbye": "(Is it time to say goodbye?)",
+    "NewOrganization": "(This is no time to sit and do nothing)",
+    "NewPublishingHouse": "(I think this is what I'll do...)",
+    "NewPoets": "(Our history begins in the twentieth century)"
+};
+
+
 // The text
 monogatari.script({
     "AtTheOffice": [
@@ -30,11 +58,11 @@ monogatari.script({
         {
             "Choice": {
                 "Congress": {
-                    "Text": "txt",
+                    "Text": staChoice.Congress,
                     "Do": "jump Congress"
                 },
                 "NewPosition": {
-                    "Text": "txt",
+                    "Text": staChoice.NewPosition,
                     "Do": "jump NewPosition"
                 }
             }
@@ -56,11 +84,11 @@ monogatari.script({
         {
             "Choice": {
                 "Mirna": {
-                    'Text': 'text1',
+                    'Text': staChoice.Mirna,
                     'Do': 'jump Mirna'
                 },
                 "ToTheSuburb": {
-                    'Text': 'text2',
+                    'Text': staChoice.ToTheSuburb,
                     'Do': 'jump ToTheSuburb'
                 }
             }
@@ -86,11 +114,11 @@ monogatari.script({
         {
             'Choice': {
                 'ViolentTeacher': {
-                    'Text': 'text1',
+                    'Text': staChoice.ViolentTeacher,
                     'Do': 'jump ViolentTeacher'
                 },
                 'LanguageCommision': {
-                    'Text': 'text2',
+                    'Text': staChoice.LanguageCommision,
                     'Do': 'jump LanguageCommision'
                 }
             }
@@ -115,11 +143,11 @@ monogatari.script({
         {
             'Choice': {
                 'ToTheSuburb': {
-                    'Text': 'text1',
+                    'Text': staChoice.ToTheSuburb,
                     'Do': 'jump ToTheSuburb'
                 },
                 'AtTheOffice': {
-                    'Text': 'text2',
+                    'Text': staChoice.AtTheOffice,
                     'Do': 'jump AtTheOffice'
                 }
             }
@@ -143,11 +171,11 @@ monogatari.script({
         {
             'Choice': {
                 'Study': {
-                    'Text': 'text1',
+                    'Text': staChoice.Study,
                     'Do': 'jump Study'
                 },
                 'Congress': {
-                    'Text': 'text2',
+                    'Text': staChoice.Congress,
                     'Do': 'jump Congress'
                 }
             }
@@ -173,11 +201,11 @@ monogatari.script({
         {
             'Choice': {
                 'Study': {
-                    'Text': 'text1',
+                    'Text': staChoice.Study,
                     'Do': 'jump Study'
                 },
                 'YouthMovement': {
-                    'Text': 'text2',
+                    'Text': staChoice.YouthMovement,
                     'Do': 'jump YouthMovement'
                 }
             }
@@ -207,11 +235,11 @@ monogatari.script({
         {
             'Choice': {
                 'Mirna': {
-                    'Text': 'text1',
+                    'Text': staChoice.Mirna,
                     'Do': 'jump Mirna'
                 },
                 'LanguageCommision': {
-                    'Text': 'text2',
+                    'Text': staChoice.LanguageCommision,
                     'Do': 'jump LanguageCommision'
                 }
             }
@@ -238,11 +266,11 @@ monogatari.script({
         {
             'Choice': {
                 'ViolentTeacher': {
-                    'Text': 'text1',
+                    'Text': staChoice.ViolentTeacher,
                     'Do': 'jump ViolentTeacher'
                 },
                 'Sugianti': {
-                    'Text': 'text2',
+                    'Text': staChoice.Sugianti,
                     'Do': 'jump Sugianti'
                 }
             }
@@ -265,11 +293,11 @@ monogatari.script({
         {
             'Choice': {
                 'YouthMovement': {
-                    'Text': 'text1',
+                    'Text': staChoice.YouthMovement,
                     'Do': 'jump YouthMovement'
                 },
                 'TheFilthyPoet': {
-                    'Text': 'text2',
+                    'Text': staChoice.TheFilthyPoet,
                     'Do': 'jump TheFilthyPoet'
                 }
             }
@@ -290,11 +318,11 @@ monogatari.script({
         {
             'Choice': {
                 'Sugianti': {
-                    'Text': 'text1',
+                    'Text': staChoice.Sugianti,
                     'Do': 'jump Sugianti'
                 },
                 'WorkPlan': {
-                    'Text': 'text2',
+                    'Text': staChoice.WorkPlan,
                     'Do': 'jump WorkPlan'
                 }
             }
@@ -314,11 +342,11 @@ monogatari.script({
         {
             'Choice': {
                 'BehindBars': {
-                    'Text': 'text1',
+                    'Text': staChoice.BehindBars,
                     'Do': 'jump BehindBars'
                 },
                 'TheCapture': {
-                    'Text': 'text2',
+                    'Text': staChoice.TheCapture,
                     'Do': 'jump TheCapture'
                 }
             }
@@ -336,11 +364,11 @@ monogatari.script({
         {
             'Choice': {
                 'TheFilthyPoet': {
-                    'Text': 'text1',
+                    'Text': staChoice.TheFilthyPoet,
                     'Do': 'jump TheFilthyPoet'
                 },
                 'Interogation': {
-                    'Text': 'text2',
+                    'Text': staChoice.Interogation,
                     'Do': 'jump Interogation'
                 }
             }
@@ -358,11 +386,11 @@ monogatari.script({
         {
             'Choice': {
                 'Police': {
-                    'Text': 'text1',
+                    'Text': staChoice.Police,
                     'Do': 'jump Police'
                 },
                 'Interogation': {
-                    'Text': 'text2',
+                    'Text': staChoice.Interogation,
                     'Do': 'jump Interogation'
                 }
             }
@@ -381,11 +409,11 @@ monogatari.script({
         {
             'Choice': {
                 'WorkPlan': {
-                    'Text': 'text1',
+                    'Text': staChoice.WorkPlan,
                     'Do': 'jump WorkPlan'
                 },
                 'WorkInPrison': {
-                    'Text': 'text2',
+                    'Text': staChoice.WorkInPrison,
                     'Do': 'jump WorkInPrison'
                 }
             }
@@ -401,11 +429,11 @@ monogatari.script({
         {
             'Choice': {
                 'Police': {
-                    'Text': 'text1',
+                    'Text': staChoice.Police,
                     'Do': 'jump Police'
                 },
                 'Interogation': {
-                    'Text': 'text2',
+                    'Text': staChoice.Interogation,
                     'Do': 'jump Interogation'
                 }
             }
@@ -425,11 +453,11 @@ monogatari.script({
         {
             'Choice': {
                 'BehindBars': {
-                    'Text': 'text1',
+                    'Text': staChoice.BehindBars,
                     'Do': 'jump BehindBars'
                 },
                 'Observation': {
-                    'Text': 'text2',
+                    'Text': staChoice.Observation,
                     'Do': 'jump Observation'
                 }
             }
@@ -451,11 +479,11 @@ monogatari.script({
         {
             'Choice': {
                 'LearningInPrison': {
-                    'Text': 'text1',
+                    'Text': staChoice.LearningInPrison,
                     'Do': 'jump LearningInPrison'
                 },
                 'BuyingBooks': {
-                    'Text': 'text2',
+                    'Text': staChoice.BuyingBooks,
                     'Do': 'jump BuyingBooks'
                 }
             }
@@ -474,11 +502,11 @@ monogatari.script({
         {
             'Choice': {
                 'BuyingBooks': {
-                    'Text': 'text1',
+                    'Text': staChoice.BuyingBooks,
                     'Do': 'jump BuyingBooks'
                 },
                 'SayingGoodbye': {
-                    'Text': 'text2',
+                    'Text': staChoice.SayingGoodbye,
                     'Do': 'jump SayingGoodbye'
                 }
             }
@@ -498,11 +526,11 @@ monogatari.script({
         {
             'Choice': {
                 'LearningInPrison': {
-                    'Text': 'text1',
+                    'Text': staChoice.LearningInPrison,
                     'Do': 'jump LearningInPrison'
                 },
                 'NewOrganization': {
-                    'Text': 'text2',
+                    'Text': staChoice.NewOrganization,
                     'Do': 'jump NewOrganization'
                 }
             }
@@ -521,11 +549,11 @@ monogatari.script({
         {
             'Choice': {
                 'SayingGoodbye': {
-                    'Text': 'text1',
+                    'Text': staChoice.SayingGoodbye,
                     'Do': 'jump SayingGoodbye'
                 },
                 'NewPublishingHouse': {
-                    'Text': 'text2',
+                    'Text': staChoice.NewPublishingHouse,
                     'Do': 'jump NewPublishingHouse'
                 }
             }
@@ -546,11 +574,11 @@ monogatari.script({
         {
             'Choice': {
                 'NewOrganization': {
-                    'Text': 'text1',
+                    'Text': staChoice.NewOrganization,
                     'Do': 'jump NewOrganization'
                 },
                 'NewPoets': {
-                    'Text': 'text2',
+                    'Text': staChoice.NewPoets,
                     'Do': 'jump NewPoets'
                 }
             }
@@ -568,11 +596,11 @@ monogatari.script({
         {
             'Choice': {
                 'NewPublishingHouse': {
-                    'Text': 'text1',
+                    'Text': staChoice.NewPublishingHouse,
                     'Do': 'jump NewPublishingHouse'
                 },
                 'Observation': {
-                    'Text': 'text2',
+                    'Text': staChoice.Observation,
                     'Do': 'jump Observation'
                 }
             }
@@ -590,11 +618,11 @@ monogatari.script({
         {
             'Choice': {
                 'SayingGoodbye': {
-                    'Text': 'text1',
+                    'Text': staChoice.SayingGoodbye,
                     'Do': 'jump SayingGoodbye'
                 },
                 'NewPoets': {
-                    'Text': 'text2',
+                    'Text': staChoice.NewPoets,
                     'Do': 'jump NewPoets'
                 }
             }
