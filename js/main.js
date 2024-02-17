@@ -32,11 +32,9 @@ class PlayMarimba extends Monogatari.Action {
 	static matchString([action]) {
 		return action === "playMarimba";
 	}
-
 	constructor(){
 		super();
 	}
-
 	apply() {
 		const soundArr = [
 			"m01",

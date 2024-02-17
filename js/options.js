@@ -23,7 +23,7 @@ monogatari.settings({
 	'Version': '0.1.0',
 
 	// Initial Label *
-	'Label': 'Start',
+	'Label': 'LanguageCommision', //Start
 
 	// Number of AutoSave Slots
 	'Slots': 10,
