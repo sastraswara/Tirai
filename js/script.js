@@ -85,7 +85,7 @@ monogatari.script ({
 	// The game starts here.
 	'Start': [
 		'show scene #000000 with fadeIn',
-		"playMarimba",
+		"playMarimba oneshot",
 		"nvl This is a text",
 		'jump AtTheOffice',
 	],

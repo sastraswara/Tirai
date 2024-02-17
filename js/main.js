@@ -32,27 +32,49 @@ class PlayMarimba extends Monogatari.Action {
 	static matchString([action]) {
 		return action === "playMarimba";
 	}
-	constructor(){
+	constructor([myaction, soundType]){
 		super();
+		this.soundType = soundType;
 	}
 	apply() {
-		const soundArr = [
-			"m01",
-			"m02",
-			"m03",
-			"m04",
-			"m05",
-			"m06",
-			"m07",
-			"m08",
-			"m09",
-			"m10",
-			"m11",
-			"m12"
-		]
+		let soundArr;
+		switch (this.soundType) {
+			case "oneshot":
+				soundArr = [
+					"m01",
+					"m02",
+					"m03",
+					"m04",
+					"m05",
+					"m06",
+					"m07",
+					"m08",
+					"m09",
+					"m10",
+					"m11",
+					"m12"
+				];
+				break;
+			case "grain":
+				soundArr = [
+					"g01",
+					"g02",
+					"g03",
+					"g04",
+					"g05",
+					"g06",
+					"g07",
+					"g08",
+					"g09",
+					"g10",
+					"g11",
+					"g12"
+				];
+				break;
+		}
 		// Play random one shot
-		const idx = Math.floor(Math.random() * soundArr.length);
-		const oneshot = soundArr[idx];
+		let idx = Math.floor(Math.random() * soundArr.length);
+		let oneshot = soundArr[idx];
 		monogatari.run("play music " + oneshot);
 	}
 }
