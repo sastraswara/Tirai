@@ -2,7 +2,5 @@
 
 // Persistent Storage Variable
 monogatari.storage ({
-	player: {
-		name: ''
-	}
+	previousMusic: null,
 });

@@ -11,7 +11,23 @@ monogatari.assets("music", {
     "m09": "sta_marimba_09.mp3",
     "m10": "sta_marimba_10.mp3",
     "m11": "sta_marimba_11.mp3",
+<<<<<<< HEAD
     "m12": "sta_marimba_12.mp3"
+=======
+    "m12": "sta_marimba_12.mp3",
+    "g01": "sta_grain_01.mp3",
+    "g02": "sta_grain_02.mp3",
+    "g03": "sta_grain_03.mp3",
+    "g04": "sta_grain_04.mp3",
+    "g05": "sta_grain_05.mp3",
+    "g06": "sta_grain_06.mp3",
+    "g07": "sta_grain_07.mp3",
+    "g08": "sta_grain_08.mp3",
+    "g09": "sta_grain_09.mp3",
+    "g10": "sta_grain_10.mp3",
+    "g11": "sta_grain_11.mp3",
+    "g12": "sta_grain_12.mp3"
+>>>>>>> STALv2
 });
 
 // Choice Text
@@ -46,13 +62,13 @@ const staChoice = {
 monogatari.script({
     "AtTheOffice": [
         "show scene #000000",
-        "playMarimba",
+        "playMarimba oneshot",
         "nvl In the confines of this office, I grapple with the complexities of language.",
         "nvl I sense that the occupying government will compel us all to adopt their language.",
         "nvl Our language is still too young to stand alongside the myriad languages of the world.",
         "nvl But that is what we have.",
         "nvl Before me, a pile of words accumulates:",
-        "playMarimba",
+        "playMarimba oneshot",
         "nvl Words that are in need of translation, equivalents that are in need of search, and meanings that are in need of discovery.",
         "nvl If our young language has a goal to achieve, it is to become a language of knowledge and science, a language that helps us achieve enlightenment.",
         {
@@ -71,15 +87,15 @@ monogatari.script({
 
     "Congress": [
         "show scene #000000",
-        "playMarimba",
+        "playMarimba oneshot",
         "nvl Perhaps I've fallen into the realm of obsession.",
         "nvl Yet, this cultural polemic is a crucial crossroads, shaping our nation's course as it emerges.",
-        "playMarimba",
+        "playMarimba oneshot",
         "nvl People without a clear identity claim to be against individualism? Our egos are not even formed yet, which makes us value ourselves and our rights as human beings.",
         "nvl And why the disdain for intellectualism? We're still in the infancy of our intellect, which we must nurture for a brighter tomorrow.",
-        "playMarimba",
+        "playMarimba oneshot",
         "nvl Even the rejection of materialism puzzles me. People on the brink of starvation, yet anti-materialism? Let us use these resources to improve our lives!",
-        "playMarimba",
+        "playMarimba oneshot",
         "nvl Whispers of a fanatic echoes in the ink.",
         {
             "Choice": {
@@ -97,18 +113,18 @@ monogatari.script({
 
     "NewPosition": [
         "show scene #000000",
-        "playMarimba",
+        "playMarimba oneshot",
         "nvl When the publishing house I was working for was closed down, many friends helped me to find a new job.",
         "nvl At first, I was asked to work at a military news agency but I didn't like working there.",
-        "playMarimba",
+        "playMarimba oneshot",
         "nvl What needed to be done there was to translate news and policies coming from the headquarter.",
         "nvl The occupancy government is beginning to establish itself.",
         "nvl A colleague in the news agency once heard a story:",
-        "playMarimba",
+        "playMarimba oneshot",
         "nvl One day a family in a village found colonial soldiers running aimlessly towards the forest.",
         "nvl The family knew something was wrong with the soldiers' behaviour.",
         "nvl As soon as they heard the sound of gunfire, the family ran to the forest as well.",
-        "playMarimba",
+        "playMarimba oneshot",
         "nvl It was deep and far when they found a farmer's hut inside the forest. They stopped running.",
         "nvl Inside the hut, they found several families who had also fled from the village.",
         {
@@ -127,18 +143,18 @@ monogatari.script({
 
     "Mirna": [
         "show scene #000000",
-        "playMarimba",
+        "playMarimba oneshot",
         "nvl Before this war started, about two years ago, I had been hospitalised in the town of B.",
-        "nvl The diagnosis: heart disease.", 
-        "playMarimba",
+        "nvl The diagnosis: heart disease.",
+        "playMarimba oneshot",
         "nvl A few weeks earlier, I had received some extra money from the sale of my last novel.",
         "nvl I sent the money by post to my wife in the village, and a few days later I received a letter:",
         "nvl I found out that she had died in an accident. The money was used for her funeral.",
-        "playMarimba",
+        "playMarimba oneshot",
         "nvl I spent many nights crying.",
         "nvl A friend at work recommended that I go to the hospital in the city of B.",
         "nvl There I calmed down.",
-        "playMarimba",
+        "playMarimba oneshot",
         "nvl Since I felt better physically, I used my sick leave to write a new novel.",
         {
             'Choice': {
@@ -156,17 +172,17 @@ monogatari.script({
 
     "ToTheSuburb": [
         "show scene #000000",
-        "playMarimba",
+        "playMarimba oneshot",
         "nvl When the occupying forces were finally arriving, the colonial population was purged.",
-        "nvl One of the effects of this purge was the closure of some businesses.", 
-        "playMarimba",
-        "nvl I was out of work for a while.", 
+        "nvl One of the effects of this purge was the closure of some businesses.",
+        "playMarimba oneshot",
+        "nvl I was out of work for a while.",
         "nvl At that time I was also worried about the situation of my children in the village.",
-        "playMarimba",
-        "nvl I decided to take care of them by moving to the suburbs of the city of J.", 
-        "nvl There I could grow crops and tend the garden. The children had plenty of space to play and run around.", 
-        "playMarimba",
-        "nvl Away from the hustle and bustle of the city, away from the threat of war, back in touch with the plants and the soil, back in touch with the humanity that lies within each of us.", 
+        "playMarimba oneshot",
+        "nvl I decided to take care of them by moving to the suburbs of the city of J.",
+        "nvl There I could grow crops and tend the garden. The children had plenty of space to play and run around.",
+        "playMarimba oneshot",
+        "nvl Away from the hustle and bustle of the city, away from the threat of war, back in touch with the plants and the soil, back in touch with the humanity that lies within each of us.",
         "nvl Under the scorching sun and drops of sweat, I often think of S. Am I in love?",
         {
             'Choice': {
@@ -184,19 +200,19 @@ monogatari.script({
 
     "ViolentTeacher": [
         "show scene #000000",
-        "playMarimba",
+        "playMarimba oneshot",
         "nvl In my spare time, I sometimes think I'm not patient enough when it comes to teaching.",
-        "nvl I was a teacher once, a long time ago. I was probably too young for that kind of work.", 
-        "playMarimba",
+        "nvl I was a teacher once, a long time ago. I was probably too young for that kind of work.",
+        "playMarimba oneshot",
         "nvl I tend to be impatient. I just wanted to make some money, then go back to my writing.",
         "nvl Those students often didn't pay attention to my teaching. So I gave some of them a slap if they got bad marks.",
         "nvl There were so many ignorant students, that I slapped almost the whole class in the face.",
-        "playMarimba",
+        "playMarimba oneshot",
         "nvl Then this was apparently submitted to the newspaper. So one day an article was published:",
         "nvl Sadistic Teacher at School.",
-        "playMarimba",
+        "playMarimba oneshot",
         "nvl I was asked to resign. That I did.",
-        "playMarimba",
+        "playMarimba oneshot",
         "nvl Maybe the job of a teacher is better suited to people who aren't as passionate as I am.",
         {
             'Choice': {
@@ -214,24 +230,24 @@ monogatari.script({
 
     "Sugianti": [
         "show scene #000000",
-        "playMarimba",
+        "playMarimba oneshot",
         "nvl This is how I met S.",
-        "playMarimba",
+        "playMarimba oneshot",
         "nvl Mr. H., my colleague, told me about a daughter of his colleague who recently came home from studying abroad.",
         "nvl He recommended me to send her my celebrated novel, not only to assist her in her learning of our language, but also the theme of a modern independent woman would be of interest to her.",
-        "playMarimba",
+        "playMarimba oneshot",
         "nvl I did, and she invited me for the first time to meet her in her house.",
         "nvl We had a nice discussion, and many discussions follow in many meetings afterwards.",
-        "playMarimba",
-        "nvl Her family was against this relationship.", 
+        "playMarimba oneshot",
+        "nvl Her family was against this relationship.",
         "nvl I was a widower with three children, something her family did not like.",
-        "playMarimba",
+        "playMarimba oneshot",
         "nvl Our relationship continued in secret.",
         "nvl One time we went for a film and her brother found us. He said:",
-        "playMarimba",
+        "playMarimba oneshot",
         "nvl You should know yourself. Break up with our sister. Be aware of your position!",
         "nvl We postponed our marriage until the war was nearly finished.",
-        "playMarimba",
+        "playMarimba oneshot",
         {
             'Choice': {
                 'Mirna': {
@@ -248,18 +264,18 @@ monogatari.script({
 
     "Study": [
         "show scene #000000",
-        "playMarimba",
+        "playMarimba oneshot",
         "nvl One of my desires is to learn.",
-        "nvl After all, I was inspired by S. Her starting salary alone was twice of mine.", 
+        "nvl After all, I was inspired by S. Her starting salary alone was twice of mine.",
         "nvl I graduated from teacher school at the city of B., she graduated from a university abroad.",
         "nvl I didn't have the diploma to get into college, but I thought I'd try to apply.",
-        "playMarimba",
+        "playMarimba oneshot",
         "nvl Coincidentally, a professor who works in this office is a language lecturer at the law school.",
         "nvl When I told him of my intention, he asked me to meet a professor, TH by name.",
         "nvl So I followed that suggestion. It appears that the professor had been told about my work and my published novels.",
         "nvl He told me: 'Send us a piece of your best writing, and we'll consider it.'",
         "nvl So I did. I got accepted.",
-        "playMarimba",
+        "playMarimba oneshot",
         "nvl I told S. about this. She also told me:",
         "nvl She needs to move out of the city J. due to her work.",
         "nvl I suspect her family was involved in this decission.",
@@ -279,17 +295,24 @@ monogatari.script({
 
     "LanguageCommision": [
         "show scene #000000",
+<<<<<<< HEAD
+=======
+        "playMarimba oneshot",
+>>>>>>> STALv2
         "nvl New language blooms",
         "nvl Tounges in transition",
         "nvl A growing lexicon.",
         "nvl I argued: we should standardise the use of language in scientific fields used in schools.",
         "nvl So far, each school uses a variety of terms, from a variety of languages from across the continent.",
+        "playMarimba oneshot",
         "nvl I suggested: let's standardise this with our young language.",
         "nvl And so it came to pass that we looked for translations--often inventing new words--for the existing terms.",
         "nvl At least 400,000 words have been translated so far.",
         "nvl This is just looking for equivalents, not to mention grammar issues.",
         "nvl The criterion: a prohibition on excessive use of regional languages.",
+        "playMarimba oneshot",
         "nvl We must ensure that this emerging language does not once again favor only a select few.",
+        "playMarimba oneshot",
         {
             'Choice': {
                 'YouthMovement': {
@@ -306,11 +329,16 @@ monogatari.script({
 
     "YouthMovement": [
         "show scene #000000",
+<<<<<<< HEAD
+=======
+        "playMarimba oneshot",
+>>>>>>> STALv2
         "nvl The Language Office is home to many young writers. One of the most prominent is IN, who seems to be being courted by a young, filthy poet.",
         "nvl I once told IN to be careful. Her essays and columns are good, but I fear for her safety.",
         "nvl She writes too harshly against the occupancy government.",
         "nvl The office was not only a centre for literary and legal discussions, but also for political rumours.",
         "nvl In meetings, there were always leaks of the occupation government's politics.",
+        "playMarimba oneshot",
         "nvl Some youth have close contacts at the university, and are closely connected to the student movement.",
         "nvl It was a tense situation, but it was spread all over the place.",
         "nvl At a later date, IN was reported missing.",
@@ -331,6 +359,7 @@ monogatari.script({
 
     "TheFilthyPoet": [
         "show scene #000000",
+        "playMarimba grain",
         "nvl Perhaps it is a joy to see many young people interested in art, literature and culture.",
         "nvl Particularly, in initiating a literary character that has a national identity.",
         "nvl But among the many poets of the younger generation, one is the most striking and courageous:",
@@ -355,11 +384,12 @@ monogatari.script({
 
     "WorkPlan": [
         "show scene #000000",
+        "playMarimba grain",
         "nvl The youth movement, who were continuing to move underground, they are preparing for independence from the occupying government.",
-        "nvl At one point, they came to me and told me that they needed a guide: a direction on what to prepare for a country that had just been liberated from colonial and occupation rule.", 
-        "nvl I fulfilled their request, although the 'workplan' that I wrote was more concerned with intellectual and cultural issues.", 
-        "nvl I put everything in there: the issue of people's representation, representation abroad, cultural direction, the issue of language and national identity, and so on.", 
-        "nvl When I finished writing it, I gave it to one of the young men I trusted.", 
+        "nvl At one point, they came to me and told me that they needed a guide: a direction on what to prepare for a country that had just been liberated from colonial and occupation rule.",
+        "nvl I fulfilled their request, although the 'workplan' that I wrote was more concerned with intellectual and cultural issues.",
+        "nvl I put everything in there: the issue of people's representation, representation abroad, cultural direction, the issue of language and national identity, and so on.",
+        "nvl When I finished writing it, I gave it to one of the young men I trusted.",
         "nvl I said: 'Don't show this to just anyone.'",
         {
             'Choice': {
@@ -377,12 +407,15 @@ monogatari.script({
 
     "TheCapture": [
         "show scene #000000",
+        "playMarimba grain",
         "nvl One day, I heard that someone from the youth movement, ST, was arrested by the secret police.",
         "nvl This comrade also revealed that ST had something I had written.",
         "nvl The secret police would, eventually, arrest me for allegedly preparing a rebellion. And they did come to arrest me.",
+        "playMarimba grain",
         "nvl I was arrested and thrown into a cell.",
         "nvl I thought of my children in the suburbs. I thought of my beloved S. I thought, perhaps I should be prepared to be killed, beheaded.",
         "nvl Meanwhile, I didn't think my life's work was done. Surely, there was something I could do, even from behind bars.",
+        "playMarimba grain",
         {
             'Choice': {
                 'Police': {
@@ -399,10 +432,12 @@ monogatari.script({
 
     "BehindBars": [
         "show scene #000000",
+        "playMarimba grain",
         "nvl The cell was filled with ten other prisoners. Their bodies were full of ulcers.",
         "nvl The sanitation of this cell is terrible. In just three days, my skin was full of ulcers like theirs.",
         "nvl We slept on boards lined up in a row. These boards were infested with bedbugs. Out of the broken pieces of wall would pour small insects.",
         "nvl When we lay down on the bed, the creatures would invade our bodies, crawling over our cheeks, lips, and nostrils.",
+        "playMarimba grain",
         "nvl But there's still plenty of work!",
         "nvl We cannot suffer if we do not choose to suffer.",
         "nvl It is in my power whether this prison cell is paradise or hell. I want this cell to be a paradise only: a paradise for my work.",
@@ -422,10 +457,13 @@ monogatari.script({
 
     "WorkInPrison": [
         "show scene #000000",
+        "playMarimba grain",
         "nvl In this prison cell, I remembered my days as a terrible teacher. Maybe in this prison cell I can make amends for that.",
         "nvl I divided my work in this cell into two. Firstly: thinking. I must complete my contemplation on the direction of this nation's culture, how to achieve it in policy, what cultural tools must be prepared.",
+        "playMarimba grain",
         "nvl The second is education. I have the opportunity to be educated to higher education. Most of the people in this prison can't read and write because they never went to school. So at least I taught them how to read and write.",
         "nvl I asked myself: 'What is the meaning of life?' I answer by the way I behave. Life is hard, so I lived it with equal tenacity.",
+        "playMarimba grain",
         {
             'Choice': {
                 'Police': {
@@ -442,14 +480,17 @@ monogatari.script({
 
     "Interogation": [
         "show scene #000000",
+        "playMarimba grain",
         "nvl There was only one person in the interrogation room. He started to talk with a question:",
         "nvl 'So you don't believe that the occupation government will fulfil its promise to give your nation independence when the war is finally over?'",
         "nvl 'No, I don't believe it.'",
         "nvl He didn't respond. The silence was too excruciating, so I continued:",
+        "playMarimba grain",
         "nvl 'I don't believe it because...'",
         "nvl As if possessed by some force, I shared my thoughts on politics, nationalism, democracy, religion, the struggle of nations.",
         "nvl The fear of death was slowly replaced with relief. Because it was in the interrogation room that I could open up and recognise my inner self.",
         "nvl When I finished my intellectual oration, I was panting slightly.",
+        "playMarimba grain",
         {
             'Choice': {
                 'BehindBars': {
@@ -466,11 +507,13 @@ monogatari.script({
 
     "Police": [
         "show scene #000000",
+        "playMarimba grain",
         "nvl The questioning in the interrogation room was long. The quiet policeman approached me slowly. He reached into the breast pocket of his uniform.",
         "nvl He showed me a photograph.",
         "nvl 'Look,' he said. I obliged. In the photo I saw a woman with three children. Two boys, one girl.",
         "nvl 'This is my wife and children.'",
         "nvl He put the photo back in the breast pocket of his uniform.",
+        "playMarimba grain",
         "nvl 'I am also unhappy with how my people treat this country.'",
         "nvl He sat down, took out his cigarette and lighter, crossed his legs. He hands me a cigarette. I take it. Then he lit my cigarette.",
         "nvl Exhaling the smoke, he said,",
@@ -492,10 +535,11 @@ monogatari.script({
 
     "LearningInPrison": [
         "show scene #000000",
+        "playMarimba grain",
         "nvl I decided to finish studying the book by the philosopher K. It was one of the confiscated items.",
-        "I spent three months in prison studying, and teaching.",
-        "Even if one's body is held captive, one's mind is always free.",
-        "Even in solitude, if one is used to exercising one's inner nature, one will always feel abundant.",
+        "nvl I spent three months in prison studying, and teaching.",
+        "nvl Even if one's body is held captive, one's mind is always free.",
+        "nvl Even in solitude, if one is used to exercising one's inner nature, one will always feel abundant.",
         "nvl In that kind of captivity, I had an inner friend who discussed and conversed with me.",
         "nvl With the liveliness of my inner life, I could encourage my friends in prison.",
         "nvl After three months in custody, I was released. I never saw the policeman who interrogated me again.",
@@ -592,7 +636,7 @@ monogatari.script({
         "nvl So, on the initiative of some friends, we founded an association that aims to promote science and culture.",
         "nvl Not all young people are educated or have the opportunity to study. So we organised various courses, from sociology, economics, politics and so on.",
         "nvl I taught the philosophy course.",
-        "Meanwhile, I heard rumours of a plan to seize independence by force by the youth movement.",
+        "nvl Meanwhile, I heard rumours of a plan to seize independence by force by the youth movement.",
         {
             'Choice': {
                 'NewPublishingHouse': {
@@ -638,7 +682,7 @@ monogatari.script({
         "nvl These poets are inspired by the turbulent times of the 20th century. They are ready to create something that is belonging to them.",
         "nvl They are aware of their historical past, but they are free from its constraints. They will create untethered narratives.",
         "nvl And who are these New Poets?",
-        "nvl They are the authors who harmonize themselves with the great shifts of this age.", 
+        "nvl They are the authors who harmonize themselves with the great shifts of this age.",
         "nvl Our history begins in the twentieth century.",
         "end"
     ]
