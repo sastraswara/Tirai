@@ -44,7 +44,9 @@ $_ready (() => {
 				this.soundType = soundType;
 			}
 			apply() {
-				let soundArr;
+				// Play random index
+        let soundArr, idx, sound;
+
 				switch (this.soundType) {
 					case "oneshot":
 						soundArr = [
@@ -61,7 +63,11 @@ $_ready (() => {
 							"m11",
 							"m12"
 						];
+    				idx = Math.floor(Math.random() * soundArr.length);
+    				sound = soundArr[idx];
+    				monogatari.run("play music " + sound);
 						break;
+
 					case "grain":
 						soundArr = [
 							"g01",
@@ -77,23 +83,23 @@ $_ready (() => {
 							"g11",
 							"g12"
 						];
+    				idx = Math.floor(Math.random() * soundArr.length);
+    				sound = soundArr[idx];
+            console.log(sound);
+    				monogatari.storage({
+    					previousMusic: sound
+    				});
+    				monogatari.run("stop music {{previousMusic}} with fade 2");
+    				monogatari.run("play music " + sound);
 						break;
 				}
-				// Play random one shot
-				let idx = Math.floor(Math.random() * soundArr.length);
-				let sound = soundArr[idx];
-
-				monogatari.storage({
-					previousMusic: sound
-				});
-
-				monogatari.run("stop music {{previousMusic}} with fade 2");
-				monogatari.run("play music " + sound);
 			}
-			revert() {
 
+			revert() {
+        //pass
 			}
 		}
+
 		PlayMarimba.id = "PlayMarimba";
 		monogatari.registerAction(PlayMarimba);
 
