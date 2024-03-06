@@ -11,23 +11,19 @@ monogatari.assets("music", {
     "m09": "sta_marimba_09.mp3",
     "m10": "sta_marimba_10.mp3",
     "m11": "sta_marimba_11.mp3",
-<<<<<<< HEAD
-    "m12": "sta_marimba_12.mp3"
-=======
     "m12": "sta_marimba_12.mp3",
-    "g01": "sta_grain_01.mp3",
-    "g02": "sta_grain_02.mp3",
-    "g03": "sta_grain_03.mp3",
-    "g04": "sta_grain_04.mp3",
-    "g05": "sta_grain_05.mp3",
-    "g06": "sta_grain_06.mp3",
-    "g07": "sta_grain_07.mp3",
-    "g08": "sta_grain_08.mp3",
-    "g09": "sta_grain_09.mp3",
-    "g10": "sta_grain_10.mp3",
-    "g11": "sta_grain_11.mp3",
-    "g12": "sta_grain_12.mp3"
->>>>>>> STALv2
+    "g01": "sta_grain-01.mp3",
+    "g02": "sta_grain-02.mp3",
+    "g03": "sta_grain-03.mp3",
+    "g04": "sta_grain-04.mp3",
+    "g05": "sta_grain-05.mp3",
+    "g06": "sta_grain-06.mp3",
+    "g07": "sta_grain-07.mp3",
+    "g08": "sta_grain-08.mp3",
+    "g09": "sta_grain-09.mp3",
+    "g10": "sta_grain-10.mp3",
+    "g11": "sta_grain-11.mp3",
+    "g12": "sta_grain-12.mp3"
 });
 
 // Choice Text
@@ -295,10 +291,7 @@ monogatari.script({
 
     "LanguageCommision": [
         "show scene #000000",
-<<<<<<< HEAD
-=======
         "playMarimba oneshot",
->>>>>>> STALv2
         "nvl New language blooms",
         "nvl Tounges in transition",
         "nvl A growing lexicon.",
@@ -329,10 +322,7 @@ monogatari.script({
 
     "YouthMovement": [
         "show scene #000000",
-<<<<<<< HEAD
-=======
         "playMarimba oneshot",
->>>>>>> STALv2
         "nvl The Language Office is home to many young writers. One of the most prominent is IN, who seems to be being courted by a young, filthy poet.",
         "nvl I once told IN to be careful. Her essays and columns are good, but I fear for her safety.",
         "nvl She writes too harshly against the occupancy government.",
