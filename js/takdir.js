@@ -11,15 +11,7 @@ monogatari.assets("music", {
     "m09": "sta_marimba_09.mp3",
     "m10": "sta_marimba_10.mp3",
     "m11": "sta_marimba_11.mp3",
-    "m12": "sta_marimba_12.mp3",
-    "l01": "sta_loop_01.mp3",
-    "l02": "sta_loop_02.mp3",
-    "l03": "sta_loop_03.mp3",
-    "l04": "sta_loop_04.mp3",
-    "l05": "sta_loop_05.mp3",
-    "l06": "sta_loop_06.mp3",
-    "l07": "sta_loop_07.mp3",
-    "l08": "sta_loop_08.mp3",
+    "m12": "sta_marimba_12.mp3"
 });
 
 // Choice Text
@@ -287,7 +279,6 @@ monogatari.script({
 
     "LanguageCommision": [
         "show scene #000000",
-        "play music l07 with fade 1 volume 60 loop",
         "nvl New language blooms",
         "nvl Tounges in transition",
         "nvl A growing lexicon.",
@@ -315,8 +306,6 @@ monogatari.script({
 
     "YouthMovement": [
         "show scene #000000",
-        "stop music l07 with fade 1",
-        "play music l08 with fade 1  volume 60 loop",
         "nvl The Language Office is home to many young writers. One of the most prominent is IN, who seems to be being courted by a young, filthy poet.",
         "nvl I once told IN to be careful. Her essays and columns are good, but I fear for her safety.",
         "nvl She writes too harshly against the occupancy government.",
