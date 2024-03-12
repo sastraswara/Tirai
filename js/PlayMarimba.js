@@ -60,6 +60,7 @@
     				monogatari.run("play music " + sound);
 						break;
 				}
+				return Promise.resolve ();
 			}
 
 			revert() {
